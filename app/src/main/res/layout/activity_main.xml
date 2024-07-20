@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/inputTime1Hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hours (h)" />
+
+    <EditText
+        android:id="@+id/inputTime1Minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/inputTime1Hours"
+        android:hint="Minutes (m)" />
+
+    <EditText
+        android:id="@+id/inputTime1Seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/inputTime1Minutes"
+        android:hint="Seconds (s)" />
+
+    <EditText
+        android:id="@+id/inputTime2Hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime1Hours"
+        android:hint="Hours (h)" />
+
+    <EditText
+        android:id="@+id/inputTime2Minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime1Minutes"
+        android:layout_toEndOf="@id/inputTime2Hours"
+        android:hint="Minutes (m)" />
+
+    <EditText
+        android:id="@+id/inputTime2Seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime1Seconds"
+        android:layout_toEndOf="@id/inputTime2Minutes"
+        android:hint="Seconds (s)" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTime2Seconds"
+        android:text="Add Times" />
+
+    <Button
+        android:id="@+id/subtractBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtn"
+        android:text="Subtract Times" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtractBtn"
+        android:text="Result will be shown here"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+</RelativeLayout>
